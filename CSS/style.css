@@ -1,0 +1,1270 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin:0px;
+	padding:0px;
+	outline:0px;}
+img{
+	border:0px;
+}
+ul, li{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+body{
+	font-family:verdana, Geneva, work sans, Sans-serif;
+	font-size:14px;color:#000;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family:oswald,sans-serif; font-weight:500px;
+}
+.wrapper_full{
+	width:100%;
+}
+.wrapper{
+	width:960px;
+	margin:0px auto;
+}
+
+
+/*-----------------------------header part code start--------------------------------------*/
+
+
+.header_full{
+	background:#f5f5f5;
+}
+.header{
+	background:#f5f5f5;
+    height: 48px;
+}
+.phone {
+    width: 20%;
+    float: left;
+    padding: 15px 10px;
+    border-left:1px solid #ddd;
+}
+
+.email {
+    width: 60%;
+    float: left;
+    padding:15px 10px;
+    border-left:1px solid #ddd;
+}
+
+.Social {
+    width: 15%;
+    float: left;
+    transition:0.3s;
+}
+.Social a {
+    float: left;
+    display: block;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    color: #2b2b2b;
+}
+.Social a:first-child{
+	border-left: 1px solid #ddd;
+}
+.Social i:hover{
+	color:#ff5200;
+}
+.phone i{
+	color:#ff5200;
+	padding-right:5px;
+}
+.email i{
+	color:#ff5200;
+	padding-right:5px;
+}
+
+
+/*-----------------------------------menu part code start----------------------------------*/
+
+
+.menu_full{
+	background-color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+.menu{
+	background:#fff;
+	height:90px;
+}
+.primarymenywrapper{
+    width:100%;
+    display: table;
+}
+.logo {
+    width: 150px;
+    float:left;
+    margin-top: 22px;
+}
+.details {
+    width: 810px;
+    float: left;
+}
+.details ul li {
+    float: left;
+    position: relative;
+}
+.details ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: oswald;
+    padding: 30px 16px;
+    display: block;
+	transition:0.3s;
+	color:#2b2b2b;
+    position: relative;
+}
+.details ul li a:hover {
+    color: #ff5200;
+}
+.details ul {
+    float: right;
+}
+ul.submenuitem {
+    visibility: hidden;
+    width: 184px;
+    border-top: 1px solid #ddd;
+    position: absolute;
+    top: 89px;
+    background: #fff;
+    padding: 20px;
+    transform: scaleY(0);
+    transition: .3s;
+    display: block;
+    transform-origin:top;
+  
+}
+ul.mainmenuitem li:hover ul.submenuitem{
+    visibility:visible ;
+    transform: scale(1);
+}
+ul.submenuitem li:hover ul.submenu2{
+    visibility: visible;
+    transform: scaleX(1);
+}
+ul.submenuitem li {
+    float: none;
+    position: relative;
+}
+ul.submenu2{
+    float:none;
+    position:absolute;
+}
+ul.submenu2 li a{
+    padding: 7px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: #333;
+    transition:.6s;
+}
+
+ul.submenuitem li a {
+    padding: 7px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: #333;
+    transition:.6s;
+    
+}
+ul.submenuitem li a:before {
+    content: "";
+    display: inline-block;
+    background: #ff5200;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition:.6s;
+    height: 2px;
+}
+ul.submenu2 li a:before {
+    content: "";
+    display: inline-block;
+    background: #ff5200;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition:.6s;
+    height: 2px ;
+    width: 0px !important;
+}
+
+a.home {
+    color: #ff5200 !important;
+}
+
+ul.submenuitem li:hover a:before{
+    width:15px;
+}
+ul.submenu2 li:hover a:before{
+    width:15px !important;
+}
+
+
+.fa-angle-down:before {
+    padding-left: 4px;
+    content: "\f107";
+}
+ul.submenu2{
+    visibility: hidden;
+    width: 184px;
+    border-left: 1px solid #ddd;
+    position: absolute;
+    left: 204px;
+    background: #fff;
+    padding: 20px;
+    transform: scaleX(0);
+    transition: .3s;
+    display: block;
+    transform-origin:left;
+
+}
+/* -------------------------contant part code start-----------------------------*/
+
+
+.ctntext {
+    color: #fff;
+	width:600px;
+}
+.ctntext button:hover {
+    background: #222;
+}
+
+.wrapper_fullcontant_full{
+	background: url(../images/slide-1.jpg);
+	background-repeat:no-repeat;
+	background-position:100%;
+    background-size: cover;
+}
+h1.big-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    float: left;
+}
+
+.ctntext p {
+    font-weight: 600;
+    line-height: 30px;
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: #ff5200;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-bottom:75px;
+}
+.slidernav{
+	width:60px;
+	margin:auto;
+	padding:38px 0px;
+	
+}
+.slidernav span {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border: 3px solid #ddd;
+    display: block;
+    border-radius: 100%;
+    float: left;
+    margin: 5px 5px;
+	cursor:pointer;
+}
+.slidernav span:last-child{
+	background:#ff5200;
+	border-color:#ff5200;
+}
+/* --------------------------banner part code start---------------------------*/
+
+
+.banner_full{
+	background-color:#f5f6f6;
+}
+.banner{
+	background:#f5f6f6;
+}
+.allbox{
+	padding:80px 0px;
+	overflow:hidden;
+}
+.singlebox {
+    width: 180px;
+    background: #fff;
+    padding: 15px;
+	float:left;
+	margin-right:30px;
+	transition:0.3s;
+}
+
+.singlebox:hover{
+	background:#ff5200;
+	color:#fff !important;
+	cursor:pointer;
+}
+.singlebox:hover h2{
+	color:#fff;
+}
+.singlebox:hover .sboxlink a{
+	color:#fff;
+}
+.singlebox:hover .sboxicon{
+	color:#fff;
+}
+.sboxtitle {
+    text-align: center;
+    width: 140px;
+    margin: auto;
+}
+.sboxtitle h2 {
+    color: #333;
+    font-size: 20px;
+    letter-spacing: -1 px;
+    line-height: 25px;
+    text-transform:uppercase;
+	margin:20px 0px;
+}
+.sboxicon {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0px;
+    color: #ff5200;
+}
+.sboxdesc {
+    text-align: center;
+    margin: 20px 0px;
+}
+.sboxlink {
+    text-align:center;
+    margin:20px 0px;
+}
+.sboxlink a{
+	color:#ff5200;
+	font-weight:500;
+	margin:5px;
+}
+.sboxlink i{
+	color:#ff5200;
+}
+.singlebox:hover .sboxlink i{
+	color:#fff;
+}
+.sboxactive{
+	background:#ff5200;
+	color:#fff;
+}
+.sboxactive h2{
+	color:#fff;
+}
+.sboxactive a{
+	color:#fff;
+}
+.sboxactive i{
+	color:#fff;
+}
+
+
+
+/*----------------------------------- sectionone part code start----------------------------------*/
+
+.sectionone_full{
+	background-color:#fff;
+}
+.sectionone{
+	background:#fff;
+}
+
+.fullcontant{
+	overflow:hidden;
+	margin:80px 0px;
+}
+
+.oneimages {
+    width: 453px;
+    float: left;
+}
+.oneimages img{
+	max-width:100%;
+}
+.onetext {
+    width: 468px;
+    float: right;
+}
+.titledes h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.titledes p {
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.titlefacilities {
+    margin-bottom: 15px;
+}
+
+.cntleftul {
+    float: left;
+    width: 248px;
+}
+.titlefacilities ul li {
+    line-height: 35px;
+}
+.titlefacilities ul li a {
+    color: #444;
+    font-weight: 500;
+    font-size: 13px;
+	transition:0.3s;
+}
+.titlefacilities ul li:hover a{
+	color:#ff5200;
+}
+.titlefacilities ul li a i {
+    margin-right: 7px;
+}
+
+.titlebutton {
+    background: #ff5200;
+    padding: 15px;
+    width: 87px;
+    border-radius: 3px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.titlebutton a{
+	color:#fff;
+}
+.titlebutton:hover{
+	background:#000;
+}
+.ctnleft{
+	float:left;
+}
+
+/* ---------------------------------sectiontwo part code start-----------------------------------*/
+
+.sectiontwo_full{
+	background:linear-gradient(#00000073, #00000073), url(../images/why-choose-us1.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;	
+}
+.sectiontwo{
+	
+}
+.contantsectionall{
+	padding:80px 0px;
+	overflow:hidden;
+}
+.singlecontant {
+    width: 180px;
+    text-align: center;
+    color: #fff;
+	float:left;
+	margin-right:80px;
+}
+.singleicon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.singlecontant h2 {
+    font-weight: 900;
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-family: arial;
+}
+.singlecontant h4 {
+    font-size: 18px;
+}
+.singlecontant:last-child{
+	margin-right:0px;
+}
+
+/* ----------------------------sectionthree part code start--------------------------*/
+
+.sectionthree_full{
+	background-color:#f5f6f6;
+}
+.sectionthree{	
+}
+.uppertitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.uppertitle h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.moreusall {
+    padding: 80px 0px;
+}
+
+.uppertitle h3:after {content: "";position: absolute;bottom: 0;background: #ff5200;width: 63px;border: 2px solid #ff5200;left: 50%;transform: translate(-50%);}
+
+.uppertitle p {
+    width: 537px;
+    margin: auto;
+    line-height: 25px;
+    font-size: 16px;
+    color: #666;
+}
+.postwrapper {
+    overflow: hidden;
+}
+
+.singlepost {
+    width: 219px;
+    overflow: hidden;
+    float: left;
+    margin-right: 28px;
+}
+.singlepost:last-child{
+	margin-right:0px;
+}
+
+.postimg img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.singlepost p {
+    color: #666;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+/* ------------------------------sectionfour part code start--------------------------*/
+
+.sectionfour_full{
+	background-color:#ffffff;
+}
+.sectionfour{
+	
+	
+}
+.pricing{
+	display:table;
+	
+	margin:80px 0px;
+}
+button.gerbutton {
+    margin: 8px 0px;
+}
+button.gerbutton:hover {
+    background: #000;
+    color: #fff;
+}
+
+.singlepricing {
+    width: 238px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 30px;
+    margin-right: 30px;
+	background:#fff;
+	border-radius:5px;
+}
+.singlepricing:last-child {
+    margin-right: 0px;
+	box-shadow:20px 0px 8px #f7f7f7;
+}
+.singlepricing:first-child {
+	box-shadow:-20px 0px 8px #f7f7f7;
+}
+
+.singlepricing h3 {
+    font-size: 23px;
+}
+
+.singlepricing h1 {
+    font-size: 38px;
+    font-weight: 900;
+    font-family: arial;
+    margin: 7px 0px;
+}
+
+.singlepricing span {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: arial black;
+    font-weight: 700;
+}
+.singlepricing ul li {
+    line-height: 35px;
+    color: #777;
+}
+
+.singlepricing ul li i {
+    font-size: 12px;
+    color: #ff5200;
+    margin-right: 5px;
+}
+
+.singlepricing ul {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/*--------------------------- sectionfive part code start-------------------------------*/
+
+.sectionfive_full{
+	background-color:#f5f5f5;
+}
+.sectionfive{
+	
+	
+}
+.fivefull{
+    overflow:hidden;
+   
+}
+
+.fiveimages {
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    background: url(../images/s02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 484px;
+}
+.fivedetails {
+    width: 50%;
+    float: right;
+    background: #222222;
+    color: #fff;
+    padding-bottom: 45px;
+}
+.fiveuppertitle{
+    padding:70px;
+}
+.fiveuppertitle h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.fiveuppertitle p {
+    width: 779px;
+    font-size: 15px;
+}
+
+.singledetails {
+    padding: 0px 70px;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+    width: 300px;
+    float: left;
+}
+
+.fiveicon {
+    overflow: hidden;
+    float: left;
+    font-size: 40px;
+    color: #ff5200;
+}
+
+.ricon {
+    float: right;
+    width: 230px;
+}
+
+.ricon h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    transition:0.3s;
+    cursor:pointer;
+}
+.ricon h3:hover{
+    color:#ff5200;
+}
+
+
+
+/*--------------------------- sectionsix part code start---------------------------*/
+
+.sectionsix_full{
+    background-color:#fff;
+}
+.sectionsix{
+   overflow:hidden;
+   padding:80px 0px;
+   
+}
+.singleperson {
+    width: 222px;
+    float: left;
+    overflow: hidden;
+    margin-right: 21px;
+}
+
+.person {
+    overflow: hidden;
+}
+
+.singleperson:last-child {
+    margin-right: 0px;
+}
+
+.personimage img {
+    width: 100%;
+    transition:.3s;
+}
+
+.personinfo {
+    text-align: center;
+    padding: 20px 15px;
+    border: 1px solid #ddd;
+    margin-top: -4px;
+}
+
+.personinfo h3 {
+    font-size: 18px;
+}
+
+.personinfo p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
+}
+.teambutton {
+    place-items: center;
+    display: grid;
+    padding-top: 50px;
+}
+.teambuttoncls {
+    background: #000;
+    color: #fff;
+    margin: 0px;
+    transition: 0.3s;
+}
+.teambuttoncls:hover{
+    background:#ff5200;
+}
+.socialicons {
+    position: absolute;
+    bottom: 41px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width:150px;
+}
+
+.personimage {
+    overflow: hidden;
+    position: relative;
+}
+
+.socialicons a{
+    overflow: hidden;
+    display: grid;
+    width: 17px;
+    height: 17px;
+    place-items: center;
+    float: left;
+    border-radius: 100%;
+    padding: 5px;
+    background: #ff5200;
+    color:#fff;
+    margin:5px;
+    transition:0.3s;
+}
+.socialicons a:hover{
+    background:#fff !important;
+    color:#000;
+}
+
+.socialicons a:first-child{
+    background:#3b5998;
+    opacity: 0;
+    transition:.90s;
+}
+.socialicons a:nth-child(2){
+    background:#00acee;
+    opacity: 0;
+    transition:.70s;
+}
+.socialicons a:nth-child(3){
+    background:#db4a39;
+    opacity: 0;
+    transition:.50s;
+}
+.socialicons a:last-child{
+    background:#0e76e8;
+    opacity: 0;
+    transition:.30s;
+}
+
+.singleperson:hover .socialicons a:first-child{
+    transform:translateY(20px);
+    opacity: 1;
+}
+.singleperson:hover .socialicons a:nth-child(2){
+    transform:translateY(20px);
+    opacity: 1;
+}
+.singleperson:hover .socialicons a:nth-child(3){
+    transform:translateY(20px);
+    opacity: 1;
+}
+.singleperson:hover .socialicons a:last-child{
+    transform:translateY(20px);
+    opacity: 1;
+}
+
+.singleperson:hover .personimage{
+    transform: scale(1.1);
+}
+.singleperson:hover{
+    cursor: pointer;
+}
+
+
+/* ------------------------sectionseven part code start-------------------------*/
+
+.sectionseven_full{
+    background-color:#f5f6f6;
+}
+.sectionseven{
+  
+  
+}
+.projects{
+    overflow: hidden;
+    padding:80px 0px;
+ 
+}
+.projectsdeatails {
+    overflow: hidden;
+    column-count: 3;
+}
+
+.singleprojescts {
+    width: 290px;
+    overflow: hidden;
+    margin-right: 30px;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.singleprojescts:last-child {margin-right: 0px;}
+
+.singleprojescts img {
+    width: 100%;
+}
+.sprojectinfo {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    color: #fff;
+    padding: 35px 30px;
+    background: linear-gradient(to top, black, transparent 100px);
+    padding-bottom:0px;
+    transition:0.3s;
+}
+.singleprojescts:hover .sprojectinfo {
+    padding-bottom: 37px;
+    background: linear-gradient(to top, black, transparent 180px);
+}
+.sprojectinfo a {
+    color: #fff;
+
+}
+.sheading a {
+    text-decoration: underline;
+    font-weight: 600;
+
+}
+.sheading h3 {
+    width: 248px;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+a#slearnmore {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    transform:translate(-132px);
+    
+}
+.singleprojescts:hover a#slearnmore{
+    transform:translate(0px);
+    transition:0.3s;
+    transition-delay:0.3s;
+    transition-timing-function: cubic-bezier(0, 0.41, 0, 1.27);
+}
+a#slearnmore i {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
+/*----------------------------- sectioneight part code start--------------------------*/
+
+.sectioneight_full{
+  
+}
+.sectioneight{
+   
+}
+.fullnews{
+    overflow:hidden;
+    padding:80px 0px;
+}
+..news{
+    overflow: hidden;
+}
+.singlenews{
+    overflow: hidden;
+    width:300px;
+    margin-right:30px;
+    float:left;
+    transition:.3s;
+    cursor:pointer;
+}
+.singlenews:hover img{
+    transform:scale(1.1)
+}
+.singlenews:last-child{
+    margin-right:0px;
+}
+.singlenews img{
+    width:100%;
+    overflow: hidden;
+}
+.singlenewsdetails {
+    padding: 24px;
+    border: 1px solid #ddd;
+    margin-top: -4px;
+}
+.singlenewsdetails a{
+    color: #888;
+}
+.newscomment {
+    overflow: hidden;
+    position: relative;
+}
+.newscomment:first-child {
+    font-size: 13px;
+}
+.newscomment:after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    background: #ff5200;
+    left: 99px;
+    top: 8px;
+    border: 1px solid #ff5200;
+}
+
+.newscomment a:last-child {
+    margin-left: 30px;
+    color: #555;
+}
+.newscomment a:last-child:hover {
+    color: #ff5200;
+}
+.newsheadline h2{
+    padding:15px 0px;
+    color:#333;
+}
+.newsheadline h2:hover {
+    color: #ff5200;
+}
+.newsheadline p{
+    color: #888;
+    line-height: 23px;;
+}
+.newsread{
+    padding: 15px 0px;
+}
+.newsread a{
+   
+    color:#ff5200;
+}
+.newsread a i{
+    color:#ff5200;
+    margin-left:10px;
+    font-size: 12px;
+}
+
+
+
+
+/*-------------------------------- Susbcribe part code start----------------------------*/
+
+
+
+
+
+.subscribewrapper {
+    overflow: hidden;
+    background: #ff5200;
+    border-radius: 3px;
+}
+.wrapper.subscribe {
+    position: relative;
+    margin-bottom: -78px;
+}
+
+.subboxsingle {
+    overflow: hidden;
+    width: 260px;
+    float: left;
+    padding: 30px;
+    color:#fff;
+}
+
+.subboxsingle:last-child {
+    margin-right: 0px;
+}
+
+.subboxsingle h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: .3px;
+}
+.inputbox {
+ 
+    position:relative;
+}
+
+.inputbox input:first-child {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    font-family: oswald;
+    letter-spacing: 1px;
+}
+input#submit {
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background: #000;
+    width: 85px;
+    font-weight: 800;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: -4px;
+}
+.subsfollowicon a {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    place-items: center;
+    display: grid;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.subsfollowicon {
+    overflow: hidden;
+}
+.subsfollowicon a:hover {
+    color: #000;
+    background: #fff;
+}
+/* ----------------------------- sectionnine part code start----------------------------*/
+
+
+.sectionnine_full{
+    background-color:#1a1a1a;
+    
+}
+.sectionnine {
+    overflow: hidden;
+    display: block;
+}
+.sectionninedetails {
+    padding: 80px 0px;
+    overflow: hidden;
+    padding-top: 141px;
+}
+.ninesingle {
+    width: 230px;
+    float: left;
+    color: #999;
+    overflow: hidden;
+    margin-right: 13px;
+}
+.ninesingle:last-child {
+    margin-right: 0px;
+}
+.ninesingle p {
+    margin: 20px 0px;
+    line-height: 22px;
+}
+
+.nineabouticon i {
+    color: #999;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.nineabouticon a i:hover {
+    color: #ff5200;
+}
+.contactspan {
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+.ninesingle h2 {
+    color: #fff;
+}
+
+.contactspan i {
+    float: left;
+    color: #ff5200;
+    margin-right: 9px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.contactdetails {
+    float: left;
+    width: 203px;
+}
+.ninesingle ul li a i {
+    margin: 10px 0px;
+    width: 8px;
+}
+.ninesingle ul {
+    padding-top: 16px;
+}
+
+
+.ninesingle ul li a {
+    width: 200px !important;
+    display: block;
+   border-bottom: 1px #333 dashed;
+   color: #999;
+}
+.ninesingle ul li a:last-child {
+    border: 0px;
+}
+.frpost {
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.frpmeta {
+    overflow: hidden;
+    width: 40px;
+    padding: 8px 7px;
+    float: left;
+    background: #313131;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    border-bottom: 30px;
+}
+.frpmeta span:first-child {font-weight: 800;font-size: 21px;}
+
+.frpmeta span:last-child {
+    font-size: 9px;
+    font-weight: 700;
+    display: block;
+    margin-top: 2px;
+    line-height: 13px;
+}
+.frtitle {
+    width: 161px;
+    float: right;
+}
+.frtitle h3 {
+    margin-bottom: 1px;
+    transition: .5s;
+}
+.frtitle h3:hover{
+    color:#ff5200;
+}
+.frposttitle {
+    width: 138px;
+    float: right;
+}
+
+.frposttitle h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.frtitle a {
+    color: #777;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* ------------------------------ footer part code start----------------------------*/
+
+.footer_full{
+    background-color: #1a1a1a;
+    border-top:1px solid #777;
+
+}
+.footer{
+   height: 100px;
+ 
+}
+
+.copyrighttext {
+    float: left;
+}
+
+.copyright {
+    color: #999;
+    padding: 40px 0px;
+}
+
+
+
+.copyrightmenu {
+    float: right;
+}
+.copyrightmenu ul li a{
+    color:#999;
+    margin-right: 15px;
+}
